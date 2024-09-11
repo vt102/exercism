@@ -7,8 +7,7 @@
 (defun response-for (phrase)
   "Documentation string"
   (let* ((case-fold-search nil)
-         (phrase (replace-regexp-in-string "[[:blank:]]*$" "" phrase))
-         (phrase (replace-regexp-in-string "[\n\r]" "" phrase))
+         (phrase (replace-regexp-in-string "[[:blank:]\n\r]*" "" phrase))
          (question-flag (string-match  "\?$" phrase))
          (caps-flag (and (string-match "[A-Z]" phrase)
                          (string-match "^[^a-z]*$" phrase)))
