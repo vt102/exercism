@@ -40,4 +40,6 @@ Thumbs.db
 # ignore yarn.lock
 **/yarn.lock
 
-# for this repo, not really using package.json
+**/*.js
+**/.exercism
+**/.vsc
